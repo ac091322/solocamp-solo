@@ -61,7 +61,7 @@ npm run build
 ```
 SECRET_KEY = <generate>
 DATABASE_URL = <postgreSQL internal database url>
-SCHEMA = <schema-name>
+SCHEMA = <schema_name>
 FLASK_APP=app
 FLASK_ENV=production
 ```
