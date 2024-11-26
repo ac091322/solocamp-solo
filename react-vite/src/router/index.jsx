@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
         element: <HomePage />,
         loader: async () => {
           try {
-            const response = await fetch("/api/albums");
+            const response = await fetch("/api/albums/all");
             if (response.ok) {
               return await response.json();
             } else {
@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
         element: <AlbumListings />,
         loader: async () => {
           try {
-            const response = await fetch("/api/albums");
+            const response = await fetch("/api/albums/all");
             if (response.ok) {
               return await response.json();
             } else {
@@ -61,7 +61,7 @@ export const router = createBrowserRouter([
         element: <ManageAlbum />,
         loader: async () => {
           try {
-            const response = await fetch("/api/albums");
+            const response = await fetch("/api/albums/all");
             if (response.ok) {
               return await response.json();
             } else {
@@ -78,7 +78,7 @@ export const router = createBrowserRouter([
         element: <UserProfile />,
         loader: async () => {
           try {
-            const response = await fetch("/api/albums");
+            const response = await fetch("/api/albums/all");
             if (response.ok) {
               return await response.json();
             } else {

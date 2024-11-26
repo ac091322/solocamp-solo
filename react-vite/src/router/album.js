@@ -14,7 +14,7 @@ export const albumLoader = async ({ params }) => {
             throw new Error('Failed to fetch album');
         }
 
-        const allAlbumsResponse = await fetch('/api/albums');
+        const allAlbumsResponse = await fetch('/api/albums/all');
         if (allAlbumsResponse.ok) {
             allAlbums = await allAlbumsResponse.json();
         } else {
